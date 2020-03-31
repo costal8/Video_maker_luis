@@ -6,6 +6,7 @@ function start() {
     function askAndReturnSearchTeam() {        
     
         return readline.question('Type a Wikipedia search term: ')
+        
     }
     console.log(content)
 }
