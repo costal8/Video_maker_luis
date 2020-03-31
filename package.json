@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/costal8/Video_maker_luis/issues"
   },
-  "homepage": "https://github.com/costal8/Video_maker_luis#readme"
+  "homepage": "https://github.com/costal8/Video_maker_luis#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
