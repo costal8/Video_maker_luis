@@ -1,0 +1,19 @@
+{
+  "name": "video_maker_luis",
+  "version": "1.0.0",
+  "description": "Projeto open source video aulas felipe dechamps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/costal8/Video_maker_luis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/costal8/Video_maker_luis/issues"
+  },
+  "homepage": "https://github.com/costal8/Video_maker_luis#readme"
+}
