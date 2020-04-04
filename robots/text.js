@@ -17,13 +17,19 @@ const nlu = new naturalLanguageUnderstandingV1({
     url: watsonUrl,
 })  
 
-async function robot(content) {
+const state = require('./state.js')
+
+async function robot() {
+    const content = state.load()
+
     await fetchContentFromWikipedia(content)
     sanitizeContent(content)
     breackContentIntoSentences(content)
     limitMaximumSentences(content)
     await fetchKeywordsOfAllSentences(content)
     
+    state.save(content)
+
     async function fetchContentFromWikipedia(content) {
         const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey) // autenticação no algorithmia 
         const WikipediaAlgorithm = algorithmiaAuthenticated.algo('web/WikipediaParser/0.1.2') //defini algoritimo
@@ -90,7 +96,7 @@ async function robot(content) {
                     reject(error)
                     return                
                 }
-                
+
                 const keywords = response.keywords.map((keyword) => {
                     return keyword.text
                 })
