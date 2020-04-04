@@ -79,7 +79,7 @@ typings/
 .next
 
 # credentials
-credentials/*.json
+credentials/
 
 # Nuxt.js build / generate output
 .nuxt
