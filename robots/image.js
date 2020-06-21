@@ -1,5 +1,5 @@
-const goolge = require('googleapis').google
-const customSearch = goolge.customsearch('v1')
+const google = require('googleapis').google
+const customSearch = google.customsearch('v1')
 const state = require('./state.js')
 
 const googleSearchCredentials = require('./credentials/google-search.json')
